@@ -3,13 +3,17 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MagucVilla_API.Datos
 {
-    public class AplicationDbContext :DbContext
+    public class AplicationDbContext : DbContext
     {
-        public AplicationDbContext(DbContextOptions<AplicationDbContext> options) :base(options)
+        public AplicationDbContext(DbContextOptions<AplicationDbContext> options) : base(options)
         {
 
         }
         public DbSet<Villa> Villas { get; set; }
+
+        public DbSet<Productos> Productos { get; set; }
+
+        //public DbSet<spProductos_Listado> spProductos_Listado { get; set; } 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -55,6 +59,14 @@ namespace MagucVilla_API.Datos
                     FechaActualizacion = DateTime.Now
                 }
              );
+
+            modelBuilder.Entity<Productos>();
+
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<spProductos_Listado>()
+                        .ToSqlQuery("EXEC spProductos_Listado");
         }
+
+        //protected override void OnModelCrearing(ModelBuilder modelBuider) => modelBuider.Entity<Producto>();
     }
 }

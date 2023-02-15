@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Z1kZH94QD1uSLgmDERHG1yPWY5e+m84V39tf3T6EBuA9ZfnYAqT3ZUshCANLvZVfY6dtc3zooKpdyGJbcKiRow==",
+  "dgSpecHash": "AGj1ieAi7rnPVs/77vGRWq9IbM8Msl9mMmkYXFMFPrvQ2ENz1C8cQLAndDsntZ8M60ypEpuFmWt4RKUZAeMUZg==",
   "success": true,
   "projectFilePath": "D:\\Desarrollo\\MagucVilla\\MagucVilla_API\\MagucVilla_API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\rlope\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\rlope\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\rlope\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\rlope\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.0\\microsoft.aspnetcore.jsonpatch.6.0.0.nupkg.sha512",
     "C:\\Users\\rlope\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.0.nupkg.sha512",
